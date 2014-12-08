@@ -8,6 +8,7 @@
 #
 #RESULT:   It works. Runtime is nearly instant.
 #          There is room for optimization, like skipping ahead 12 digits for each zero encountered.
+#          Optimization is not necessary for input of this size.
 ########################################################################################################################
 
 num = '\
