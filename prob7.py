@@ -8,10 +8,10 @@
 #
 #RESULT:   It works. Runs in less than one second.
 #          There is a lot of room for optimization here if performance was a requirement or we needed a lot of primes.
-#######################################################################################################################
+#          Could use a segmented sieve or other method instead of repeatedly making primes blindly.
+########################################################################################################################
 
 
-#Implementation of the Sieve of Eratosthenes 
 def generate_primes(n):
     p = [True] * n
 
@@ -23,14 +23,13 @@ def generate_primes(n):
                 check_value += i
     return p
 
-#Logical prime list is the boolean array of T/F values dicating primality for each number.
-#Actual prime list is the collapsed logical prime list, removing all non-primes.
+
 prime_list_logical = []
 prime_list_actual = []
 num = 10000
 
 #Keep making more and more primes until we have enough.
-while len(prime_list_actual) < num + 1:
+while len(prime_list_actual) < 10001:
     prime_list_logical = generate_primes(num)
     prime_list_actual = []
     num *= 10
@@ -47,13 +46,5 @@ while len(prime_list_actual) < num + 1:
 
 print("10001st prime is: {}".format(prime_list_actual[10000]))
 
-
-########################################################################################################################
-#OUTPUT:
-#Checked 100000 numbers
-#Checked 1000000 numbers
-#Checked 10000000 numbers
-#10001st prime is: 104743
-########################################################################################################################
 
 

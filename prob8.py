@@ -1,14 +1,13 @@
 ########################################################################################################################
-#PROBLEM:  The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
+# PROBLEM:  The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
 #          Find the thirteen adjacent digits in the 1000-digit number that have the greatest product.
 #          What is the value of this product?
-#
-#APPROACH: This one is fairly straightforward. For each digit, multiply it by the following twelve digits.
+########################################################################################################################
+# APPROACH: This one is fairly straightforward. For each digit, multiply it by the following twelve digits.
 #          For each resulting product check if greater than the current maximum, and replace if necessary.
-#
-#RESULT:   It works. Runtime is nearly instant.
-#          There is room for optimization, like skipping ahead 12 digits for each zero encountered.
-#          Optimization is not necessary for input of this size.
+########################################################################################################################
+# RESULT:   It works. Runtime is nearly instant.
+#          There is room for optimization, like skipping sequences of digits whenever zeroes will be involved.
 ########################################################################################################################
 
 num = '\
