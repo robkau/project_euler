@@ -19,7 +19,7 @@ import math
 
 for a in range(1, 500):
     for b in range(a + 1, 500):
-        c = math.sqrt(a**2 + b**2)
+        c = math.sqrt(a ** 2 + b ** 2)
         if c.is_integer():
             if (a + b + c) == 1000:
                 print("a=" + str(a) + " b=" + str(b) + " c=" + str(c))
