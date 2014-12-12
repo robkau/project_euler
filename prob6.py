@@ -8,7 +8,7 @@ PROBLEM:   The sum of the squares of the first ten natural numbers is, 1^2 + 2^2
 APPROACH:  This is a simple exercise in using a for loop over a range with a simple operation for each iteration.
 
 RESULT:    It works. Runtime is nearly instant.
-           a
+
 """
 
 sum_of_squares = 0

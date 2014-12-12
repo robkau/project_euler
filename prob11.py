@@ -8,9 +8,10 @@ PROBLEM:  In the 20×20 grid below, four numbers along a diagonal line have been
           What is the greatest product of four adjacent numbers in the same direction
           (up, down, left, right, or diagonally) in the 20×20 grid?
           
-APPROACH: Turn the input into a 2d array and visit all cells to test multiplying in the 4 directions. Handle exceptions.
+APPROACH: Turn the input into a 2d array and visit all cells to test multiplying in the 4 directions. By multiplying up,
+          right, up-right, and down-right in every cell, we will check every valid sequence. Discard out-of-bound checks
           
-RESULT:   
+RESULT:   It works.
            
 """
 
@@ -36,15 +37,15 @@ num = '\
         20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54 \
         01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48'.split()
 
+# Construct a 2d array (really a list of lists) and map the numbers into it.
 grid = [[0 for i in range(20)] for j in range(20)]
-
 for x in range(20):
     for y in range(20):
         grid[x][y] = num.pop(0)
 
-# These loops visit every square, check multiplication along each direction, and maintains the highest result so far.
-# Errors that arise from going out of bounds are caught and discarded.
-# dx and dy represent the coordinate changes of our 4 potential movement directions to check.
+# These loops visit every square, check multiplication along each direction, and maintain the highest result so far.
+# Errors that arise from going out of bounds are caught and discarded, with that sequence not being compared.
+# dx and dy represent the coordinate changes of the 4 potential movement directions to check.
 highest = 0
 dx = [0, 1, 1, 1]
 dy = [1, 0, 1, -1]
