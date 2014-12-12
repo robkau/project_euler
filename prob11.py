@@ -42,12 +42,30 @@ for x in range(20):
     for y in range(20):
         grid[x][y] = num.pop(0)
 
+# These loops visit every square, check multiplication along each direction, and maintains the highest result so far.
+# Errors that arise from going out of bounds are caught and discarded.
+# dx and dy represent the coordinate changes of our 4 potential movement directions to check.
+highest = 0
+dx = [0, 1, 1, 1]
+dy = [1, 0, 1, -1]
 for x in range(20):
     for y in range(20):
-        # Take the number, multiply it up, right, up-right, and down-right. Maintain highest result.
-                                                                                     # Handle IndexErrors and discard.
+        for c in range(4):
+            total = 1
+            try:
+                for d in range(4):
+                    total *= int(grid[x+d*dx[c]][y+d*dy[c]])
+            except IndexError:
+                total = 1
+                pass
+
+            if total > highest:
+                highest = total
+
+
+print(highest)
 
 """
-OUTPUT:   
+OUTPUT:   70600674
           
 """
