@@ -1,10 +1,17 @@
-"""
-PROBLEM:
+"""       
+PROBLEM:  
           
-APPROACH:
           
-RESULT:
-
-"""
+          
+          
+          
+APPROACH: 
+          
+RESULT:   
+"""       
           
 # Need to re-do this one.
+
+"""
+OUTPUT:   
+"""

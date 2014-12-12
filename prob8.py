@@ -44,3 +44,8 @@ for i in range(len(num) - 13):
         max_product = product
 
 print(max_product)
+
+"""
+OUTPUT:   23514624000
+
+"""

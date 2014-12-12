@@ -48,4 +48,10 @@ while len(prime_list_actual) < 10001:
 print("10001st prime is: {}".format(prime_list_actual[10000]))
 
 
+"""
+OUTPUT:   Checked 100000 numbers
+          Checked 1000000 numbers
+          Checked 10000000 numbers
+          10001st prime is: 104743
 
+"""
