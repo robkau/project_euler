@@ -9,7 +9,8 @@ PROBLEM:  In the 20×20 grid below, four numbers along a diagonal line have been
           (up, down, left, right, or diagonally) in the 20×20 grid?
           
 APPROACH: Turn the input into a 2d array and visit all cells to test multiplying in the 4 directions. By multiplying up,
-          right, up-right, and down-right in every cell, we will check every valid sequence. Discard out-of-bound errors
+          right, up-right, and down-right in every cell, we will check every valid sequence.
+          Out of bounds errors and the resulting sum are discarded.
           
 RESULT:   It works.
            
@@ -43,19 +44,18 @@ for x in range(20):
     for y in range(20):
         grid[x][y] = num.pop(0)
 
-# These loops visit every square, check multiplication along each direction, and maintain the highest result so far.
-# Errors that arise from going out of bounds are caught and discarded, with that sequence not being compared.
-# dx and dy represent the coordinate changes of the 4 potential movement directions to check.
+# These loops visit every square, check multiplication along each direction, and maintain the highest result.
+# dx and dy represent the coordinate changes of the 4 potential movement directions to check. U
 highest = 0
 dx = [0, 1, 1, 1]
 dy = [1, 0, 1, -1]
 for x in range(20):
     for y in range(20):
-        for c in range(4):
+        for i in range(4):
             total = 1
             try:
-                for d in range(4):
-                    total *= int(grid[x+d*dx[c]][y+d*dy[c]])
+                for k in range(4):
+                    total *= int(grid[x+k*dx[i]][y+k*dy[i]])
             except IndexError:
                 total = 1
                 pass
