@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec323383-a604-4995-ba9e-a2ff846fb3d5" name="Default" comment="More comment standardization">
+    <list default="true" id="ec323383-a604-4995-ba9e-a2ff846fb3d5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project_euler.iws" />
@@ -576,7 +576,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419058455114</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test">
+      <created>1419058629820</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1419058629820</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -625,7 +631,8 @@
     <MESSAGE value="Finished problem 11" />
     <MESSAGE value="Cleaned up old comments" />
     <MESSAGE value="More comment standardization" />
-    <option name="LAST_COMMIT_MESSAGE" value="More comment standardization" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
