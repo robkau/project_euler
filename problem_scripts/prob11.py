@@ -9,7 +9,7 @@ PROBLEM:  In the 20×20 grid below, four numbers along a diagonal line have been
           (up, down, left, right, or diagonally) in the 20×20 grid?
           
 APPROACH: Turn the input into a 2d array and visit all cells to test multiplying in the 4 directions. By multiplying up,
-          right, up-right, and down-right in every cell, we will check every valid sequence. Discard out-of-bound checks
+          right, up-right, and down-right in every cell, we will check every valid sequence. Discard out-of-bound errors
           
 RESULT:   It works.
            
