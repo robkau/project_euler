@@ -13,8 +13,8 @@ PROBLEM:  The following iterative sequence is defined for the set of positive in
 
           Which starting number, under one million, produces the longest chain?
           
-APPROACH: We start by defining a recursive function chain(num) that returns the chain length to 1 for a given num.
-          By recursively having chain call itself with chain(next_hop) it is assumed we will eventually end at 1.
+APPROACH: Let chain(num) be a function that returns the chain length to 1 for the defined sequence starting at num.
+          By recursively having chain(num) call itself with chain(next_hop) it is assumed we will eventually end at 1.
           When it finds 1, or a previously visited number in the dictionary, it updates the dict with the hop count for
           every node traversed and returns the result.
           With this algorithm, we can repeatedly call this function on a million numbers and it effectively caches
