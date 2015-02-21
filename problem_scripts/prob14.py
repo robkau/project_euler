@@ -32,7 +32,7 @@ chain_dict = {1: True}
 # Define the function that takes num and returns (num, hops_to_one).
 def chain(num):
 
-    # Check if it is already in the dictionary.
+    # Check if num is already in the dictionary.
     # If it is, return the number and the hop count associated with it.
     if chain_dict.get(num, False):
         return num, chain_dict[num]
