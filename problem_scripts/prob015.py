@@ -25,7 +25,7 @@ APPROACH: Look at this as a problem of combinations and permutations.
           Our formula for a n x n grid now looks like -   (2n)! / (n! * n!)
 
           
-RESULT:   It works but the final digits got cut off. Try reformatting the output.1
+RESULT:   It works but the final digits got cut off. Try reformatting the output. Works now!
            
 """
 import math
