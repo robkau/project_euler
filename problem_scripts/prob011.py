@@ -45,7 +45,7 @@ for x in range(20):
         grid[x][y] = num.pop(0)
 
 # These loops visit every square, check multiplication along each direction, and maintain the highest result.
-# dx and dy represent the coordinate changes of the 4 potential movement directions to check. U
+# dx and dy represent the coordinate changes of the 4 potential movement directions to check.
 highest = 0
 dx = [0, 1, 1, 1]
 dy = [1, 0, 1, -1]
