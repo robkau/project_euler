@@ -1,5 +1,5 @@
 """
-A file implementing searching tools. Code is a mess right now, still under serious work.
+A file implementing searching tools. Code is a MESS right now, this is mostly just notes for later.
 """
 # bst split(func, space)
 
